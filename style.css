@@ -44,24 +44,42 @@ body {
 }
 
 .imagem__de__perfil {
-    width: 200;
-    height: 400px;
+    width: 300px;
+    height: 500px;
 }
 
 .apresentacao__links {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
     justify-content: space-between;    
 }
 
-.apresentacao__links__botao {
-    background-color: #22D4FD;
-    width: 280px;
-    text-align: center;
-    border-radius: 16px;
+.apresentacao__links__subtitulo {
+    font-family: "Krona one", sans-serif;
+    font-weight: 100;
     font-size: 24px;
-    font-weight: 600;
+}
+
+.apresentacao__links__botao {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 381px;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid #22D4FD;
+    font-size: 24px;
+    font-weight: 400;
     padding: 21.5px 0;
     text-decoration: none;
-    color: #000000;
+    color: #f6f6f6;
     font-family: "Montserrat", sans-serif;
+}
+
+.apresentacao__links__botao:hover {
+    background-color: #2A0C4E;
+    color: #D78521;
+    border: 2px solid #D78521;    
 }
