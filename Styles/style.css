@@ -25,9 +25,9 @@ body {
 .cabecalho {
     color: var(--cor-terciaria);
     font-family: var(--fonte-primaria);
-    font-size: 18px;
+    font-size: 2,25rem;
     font-weight: 600;
-    padding: 5% 0% 0 20%;
+    padding: 2% 0% 0 20%;
     
 }
 
@@ -55,14 +55,15 @@ body {
 }
 
 .apresentacao {
-    padding: 5% 20% 10% 20%;
+    padding: 5% 20%;
+    gap: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .apresentacao__conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -70,18 +71,18 @@ body {
 }
             
 .apresentacao__conteudo__titulo {
-    font-size: 36px;
+    font-size: 2,25rem;
     font-family:var(--fonte-secundaria);
 }
 
 .apresentacao__conteudo__paragrafo {
-    font-size: 24px;
+    font-size: 1,5rem;
     font-family: var(--fonte-primaria)
 }
 
-.imagem__de__perfil {
-    width: 300px;
-    height: 500px;
+.apresentacao__imagem {
+    width: 30%;
+    
 }
 
 .apresentacao__links {
@@ -95,18 +96,18 @@ body {
 .apresentacao__links__subtitulo {
     font-family: var(--fonte-secundaria);
     font-weight: 100;
-    font-size: 24px;
+    font-size: 1,5rem;
 }
 
 .apresentacao__links__botao {
     display: flex;
     justify-content: center;
     gap: 16px;
-    width: 381px;
-    text-align: center;
+    width: 60%;
+    align-items: flex-end;
     border-radius: 8px;
     border: 2px solid var(--cor-terciaria);
-    font-size: 24px;
+    font-size: 1,5rem;
     font-weight: 400;
     padding: 21.5px 0;
     text-decoration: none;
@@ -126,6 +127,34 @@ body {
     text-align: center;
     padding: 24px;
     font-family: var(--fonte-primaria);
-    font-size: 24px;
+    font-size: 1,5rem;
     font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+
+    .cabecalho {
+        padding: 5%;
+        
+        
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: auto;
+    }
+    
+        .apresentacao__conteudo {
+        padding-bottom: 5%;
+        width: auto;
+    }
+
+    .apresentacao__links__botao {
+        padding: auto;
+    }
 }
